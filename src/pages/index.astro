@@ -1,0 +1,176 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import IconStraigthen from "../components/icons/IconStraighten.astro";
+import IconScissor from "../components/icons/IconScissor.astro";
+import IconTinte from "../components/icons/IconTinte.astro";
+import IconRazer from "../components/icons/IconRazer.astro";
+import IconInstagram from "../components/icons/IconInstagram.astro";
+import IconFacebook from "../components/icons/IconFacebook.astro";
+import IconLocation from "../components/icons/IconLocation.astro";
+import ServiceIcon from "../components/ServiceIcon.astro";
+import ButtonHeader from "../components/ButtonHeader.astro";
+---
+
+<Layout title="Landing Page">
+  <Header />
+  <main id="home">
+    <section
+      class="w-full h-[750px] max-h-screen flex justify-center items-center px-56"
+    >
+      <div
+        class="w-full flex flex-col gap-8 items-center justify-center max-w-[1440px]"
+      >
+        <header class="w-full flex justify-center">
+          <h1 class="text-pink-300 font-bold text-8xl text-center">
+            Forbici Stilisti
+          </h1>
+        </header>
+        <footer class="w-full flex justify-center items-center gap-6">
+          <ButtonHeader
+            class="text-pink-100 bg-opacity-85 bg-pink-400 border-2 border-pink-400 border-opacity-85"
+          />
+          <ButtonHeader
+            class="text-pink-100 bg-transparent border-2 border-pink-400"
+          />
+        </footer>
+      </div>
+    </section>
+
+    <section
+      id="service"
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+    >
+      <div class="w-full flex flex-col max-w-[1440px] gap-10">
+        <header class="w-full flex justify-star">
+          <h2 class="text-pink-200 font-bold text-5xl">Servicios</h2>
+        </header>
+        <div class="w-full grid grid-cols-auto-fit gap-2">
+          <ServiceIcon title="Corte">
+            <IconScissor class="w-16" />
+          </ServiceIcon>
+          <ServiceIcon title="Alisado">
+            <IconStraigthen class="w-16" />
+          </ServiceIcon>
+          <ServiceIcon title="Tintura">
+            <IconTinte class="w-16" />
+          </ServiceIcon>
+          <ServiceIcon title="Rasurado">
+            <IconRazer class="w-16" />
+          </ServiceIcon>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="history"
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+    >
+      <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
+        <header class="w-full flex justify-star">
+          <h2 class="text-pink-200 font-bold text-5xl">Historia</h2>
+        </header>
+        <footer class="flex gap-8 text-lg">
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+            laboriosam rem officia quisquam vero, reprehenderit consequuntur
+            suscipit repellat tempora itaque voluptatum cupiditate possimus
+            laudantium in quidem unde neque nam a.
+          </p>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+            laboriosam rem officia quisquam vero, reprehenderit consequuntur
+            suscipit repellat tempora itaque voluptatum cupiditate possimus
+            laudantium in quidem unde neque nam a.
+          </p>
+        </footer>
+      </div>
+    </section>
+
+    <section
+    id="contact"
+    class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+  >
+    <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
+      <div class="w-full flex items-center justify-between text-white">
+        <span>+10 años</span>
+        <span>+10 años</span>
+        <span>+10 años</span>
+        <span>+10 años</span>
+      </div>
+    </div>
+  </section>
+
+    <section
+      id="galery"
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+    >
+      <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
+        <header class="w-full flex justify-star">
+          <h2 class="text-pink-200 font-bold text-5xl">Galeria</h2>
+        </header>
+        <div class="w-full h-full grid grid-cols-auto-fit gap-2">
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery-2.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery-3.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery-4.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery-5.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover h-60 w-full rounded-lg"
+            src="../../public/galery-6.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+    >
+      <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
+        <header class="w-full flex justify-star">
+          <h2 class="text-pink-200 font-bold text-5xl">Contacto</h2>
+        </header>
+        <footer class="flex text-lg gap-5 text-white">
+          <a
+            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            href="#"
+            target="_blank"
+            ><IconLocation class="w-6" /> Ubicación: 2194, FIH, Pacheco, C1431 DF</a
+          >
+          <a
+            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            href="https://www.instagram.com/forbicistilisti/?hl=es"
+            target="_blank"><IconInstagram class="w-6" />Instagram</a
+          >
+          <a
+            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            href="#"
+            target="_blank"><IconFacebook class="w-6" />Facebook</a
+          >
+        </footer>
+      </div>
+    </section>
+  </main>
+</Layout>
