@@ -16,10 +16,10 @@ import ButtonHeader from "../components/ButtonHeader.astro";
   <Header />
   <main id="home">
     <section
-      class="w-full h-[750px] max-h-screen flex justify-center items-center px-56"
+      class="w-full max-h-screen h-[900px] flex justify-center items-center px-56"
     >
       <div
-        class="w-full flex flex-col gap-8 items-center justify-center max-w-[1440px]"
+        class="w-full flex flex-col gap-10 items-center justify-center max-w-[1440px]"
       >
         <header class="w-full flex justify-center">
           <h1 class="text-pink-300 font-bold text-8xl text-center">
@@ -45,7 +45,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Servicios</h2>
         </header>
-        <div class="w-full grid grid-cols-auto-fit gap-2">
+        <div class="w-full grid grid-cols-auto-fit gap-3">
           <ServiceIcon title="Corte">
             <IconScissor class="w-16" />
           </ServiceIcon>
@@ -88,11 +88,10 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     </section>
 
     <section
-    id="contact"
     class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
   >
     <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
-      <div class="w-full flex items-center justify-between text-white">
+      <div class="w-full flex items-center justify-between text-white text-2xl">
         <span>+10 años</span>
         <span>+10 años</span>
         <span>+10 años</span>
@@ -109,7 +108,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Galeria</h2>
         </header>
-        <div class="w-full h-full grid grid-cols-auto-fit gap-2">
+        <div class="w-full h-full grid grid-cols-auto-fit gap-3">
           <img
             class="object-cover h-60 w-full rounded-lg"
             src="../../public/galery.jpg"
@@ -155,7 +154,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <footer class="flex text-lg gap-5 text-white">
           <a
             class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
-            href="#"
+            href="https://www.google.com/maps/place/Forbici+Stilisti/@-34.5749891,-58.4827971,15z/data=!4m2!3m1!1s0x0:0xe224e909fd5f437a?sa=X&ved=2ahUKEwiphKHPjquEAxUiqJUCHUuzD1gQ_BJ6BAgwEAA"
             target="_blank"
             ><IconLocation class="w-6" /> Ubicación: 2194, FIH, Pacheco, C1431 DF</a
           >
@@ -166,7 +165,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           >
           <a
             class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
-            href="#"
+            href="https://www.facebook.com/forbicistilisti/?locale=es_LA"
             target="_blank"><IconFacebook class="w-6" />Facebook</a
           >
         </footer>
