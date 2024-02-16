@@ -20,12 +20,13 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       class="w-full max-h-screen h-[900px] flex justify-center items-center px-56"
     >
       <div
-        class="w-full flex flex-col gap-10 items-center justify-center max-w-[1440px]"
+        class="w-full flex flex-col gap-8 items-center justify-center max-w-[1440px]"
       >
-        <header class="w-full flex justify-center">
+        <header class="w-full flex flex-col items-center justify-center gap-6">
           <h1 class="text-pink-300 font-bold text-8xl text-center">
             Forbici Stilisti
           </h1>
+          <p class="text-3xl text-white">Especialistas en Corte/Colorimetria</p>
         </header>
         <footer class="w-full flex justify-center items-center gap-6">
           <ButtonHeader
@@ -73,16 +74,16 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         </header>
         <footer class="flex gap-8 text-lg">
           <p class="text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+            Lorem ipsum dolor <span class="text-pink-400">sit amet consectetur</span>, adipisicing elit. Quas
             laboriosam rem officia quisquam vero, reprehenderit consequuntur
-            suscipit repellat tempora itaque voluptatum cupiditate possimus
+            suscipit repellat tempora itaque <span class="text-pink-400">voluptatum cupiditate</span> possimus
             laudantium in quidem unde neque nam a.
           </p>
           <p class="text-white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
             laboriosam rem officia quisquam vero, reprehenderit consequuntur
             suscipit repellat tempora itaque voluptatum cupiditate possimus
-            laudantium in quidem unde neque nam a.
+            laudantium  <span class="text-pink-400">in quidem unde neque nam a</span>.
           </p>
         </footer>
       </div>
@@ -95,10 +96,10 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <div
           class="w-full flex items-center justify-between text-white text-2xl"
         >
-          <span>+10 años</span>
-          <span>+10 años</span>
-          <span>+10 años</span>
-          <span>+10 años</span>
+          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl">+10</span> Años</p>
+          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl">+1000</span> Clientes</p>
+          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl">+10</span> Años</p>
+          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl">+1000</span> Clientes</p>
         </div>
       </div>
     </section>
@@ -154,27 +155,27 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Contacto</h2>
         </header>
-        <footer class="w-full h-full grid grid-cols-auto-fit text-lg xl:text-xl gap-5 text-white">
+        <footer class="w-full h-full flex flex-wrap text-lg 2xl:text-xl gap-5 text-white">
           <a
             class="flex text-center justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.google.com/maps/place/Forbici+Stilisti/@-34.5749891,-58.4827971,15z/data=!4m2!3m1!1s0x0:0xe224e909fd5f437a?sa=X&ved=2ahUKEwiphKHPjquEAxUiqJUCHUuzD1gQ_BJ6BAgwEAA"
             target="_blank"
-            ><IconLocation class="w-8 xl:min-w-8" />Ubicación: 2194, FIH, Pacheco, C1431 DF</a
+            ><IconLocation class="w-6 2xl:min-w-8" />Ubicación: 2194, FIH, Pacheco, C1431 DF</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href=""
-            target="_blank"><IconPhone class="w-6 xl:min-w-8" />Telefono: 4523-6782</a
+            target="_blank"><IconPhone class="w-6 2xl:min-w-8" />Telefono: 4523-6782</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.instagram.com/forbicistilisti/?hl=es"
-            target="_blank"><IconInstagram class="w-6 xl:min-w-8" />Instagram</a
+            target="_blank"><IconInstagram class="w-6 2xl:min-w-8" />Instagram</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.facebook.com/forbicistilisti/?locale=es_LA"
-            target="_blank"><IconFacebook class="w-6 xl:min-w-8" />Facebook</a
+            target="_blank"><IconFacebook class="w-6 2xl:min-w-8" />Facebook</a
           >
         </footer>
       </div>
