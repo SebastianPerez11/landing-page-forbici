@@ -8,6 +8,7 @@ import IconRazer from "../components/icons/IconRazer.astro";
 import IconInstagram from "../components/icons/IconInstagram.astro";
 import IconFacebook from "../components/icons/IconFacebook.astro";
 import IconLocation from "../components/icons/IconLocation.astro";
+import IconPhone from "../components/icons/IconPhone.astro";
 import ServiceIcon from "../components/ServiceIcon.astro";
 import ButtonHeader from "../components/ButtonHeader.astro";
 ---
@@ -88,17 +89,19 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     </section>
 
     <section
-    class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
-  >
-    <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
-      <div class="w-full flex items-center justify-between text-white text-2xl">
-        <span>+10 años</span>
-        <span>+10 años</span>
-        <span>+10 años</span>
-        <span>+10 años</span>
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
+    >
+      <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
+        <div
+          class="w-full flex items-center justify-between text-white text-2xl"
+        >
+          <span>+10 años</span>
+          <span>+10 años</span>
+          <span>+10 años</span>
+          <span>+10 años</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <section
       id="galery"
@@ -151,22 +154,27 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Contacto</h2>
         </header>
-        <footer class="flex text-lg gap-5 text-white">
+        <footer class="w-full h-full grid grid-cols-auto-fit text-lg xl:text-xl gap-5 text-white">
           <a
-            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            class="flex text-center justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.google.com/maps/place/Forbici+Stilisti/@-34.5749891,-58.4827971,15z/data=!4m2!3m1!1s0x0:0xe224e909fd5f437a?sa=X&ved=2ahUKEwiphKHPjquEAxUiqJUCHUuzD1gQ_BJ6BAgwEAA"
             target="_blank"
-            ><IconLocation class="w-6" /> Ubicación: 2194, FIH, Pacheco, C1431 DF</a
+            ><IconLocation class="w-8 xl:min-w-8" />Ubicación: 2194, FIH, Pacheco, C1431 DF</a
           >
           <a
-            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
+            href=""
+            target="_blank"><IconPhone class="w-6 xl:min-w-8" />Telefono: 4523-6782</a
+          >
+          <a
+            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.instagram.com/forbicistilisti/?hl=es"
-            target="_blank"><IconInstagram class="w-6" />Instagram</a
+            target="_blank"><IconInstagram class="w-6 xl:min-w-8" />Instagram</a
           >
           <a
-            class="flex w-max items-center gap-2 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2"
+            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.facebook.com/forbicistilisti/?locale=es_LA"
-            target="_blank"><IconFacebook class="w-6" />Facebook</a
+            target="_blank"><IconFacebook class="w-6 xl:min-w-8" />Facebook</a
           >
         </footer>
       </div>
