@@ -96,14 +96,18 @@ import ButtonHeader from "../components/ButtonHeader.astro";
     </section>
 
     <section
-    class="w-full h-full max-h-screen flex justify-center items-center px-56 py-8"
-  >
-    <div class="w-full h-full flex max-w-[1440px] gap-10">
+      class="w-full h-full max-h-screen flex justify-center items-center px-56 py-8"
+    >
+      <div class="w-full h-full flex max-w-[1440px] gap-10">
         <picture class="w-full grid place-content-center">
-          <img class="w-96 xl:w-[480px] 2xl:w-[600px]" src="../../public/salon.svg" alt="">
+          <img
+            class="w-96 xl:w-[480px] 2xl:w-[600px]"
+            src="/public/salon.svg"
+            alt=""
+          />
         </picture>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <section
       class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
@@ -220,6 +224,13 @@ import ButtonHeader from "../components/ButtonHeader.astro";
             ><IconFacebook class="w-6 2xl:min-w-8" />Facebook</a
           >
         </footer>
+        <picture class="flex items-center">
+          <img
+            class="rounded-full object-cover w-12"
+            src="/public/logo.svg"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
   </main>
