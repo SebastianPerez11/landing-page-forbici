@@ -20,20 +20,22 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       class="w-full max-h-screen h-[900px] flex justify-center items-center px-56"
     >
       <div
-        class="w-full flex flex-col gap-8 items-center justify-center max-w-[1440px]"
+        class="w-full flex flex-col gap-12 items-center justify-center max-w-[1440px]"
       >
         <header class="w-full flex flex-col items-center justify-center gap-6">
           <h1 class="text-pink-300 font-bold text-8xl text-center 2xl:text-9xl">
             Forbici Stilisti
           </h1>
-          <p class="text-3xl text-white opacity-75 2xl:text-4xl">Especialistas en Corte/Colorimetria</p>
+          <p class="text-3xl text-white opacity-80 2xl:text-4xl">
+            Especialistas en Corte/Colorimetria
+          </p>
         </header>
-        <footer class="w-full flex justify-center items-center gap-6">
+        <footer class="w-full flex justify-center items-center gap-8">
           <ButtonHeader
-            class="text-pink-100 bg-opacity-85 bg-pink-400 border-2 border-pink-400 border-opacity-85"
+            class="bg-opacity-90 bg-pink-400 hover:bg-opacity-100"
           />
           <ButtonHeader
-            class="text-pink-100 bg-transparent border-2 border-pink-400"
+            class="bg-transparent hover:bg-white hover:border-white hover:bg-opacity-85 hover:text-pink-400"
           />
         </footer>
       </div>
@@ -74,32 +76,62 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         </header>
         <footer class="flex gap-8 text-lg 2xl:text-xl">
           <p class="text-white">
-            Lorem ipsum dolor <span class="text-pink-400">sit amet consectetur</span>, adipisicing elit. Quas
-            laboriosam rem officia quisquam vero, reprehenderit consequuntur
-            suscipit repellat tempora itaque <span class="text-pink-400">voluptatum cupiditate</span> possimus
-            laudantium in quidem unde neque nam a.
+            Lorem ipsum dolor <span class="text-pink-400"
+              >sit amet consectetur</span
+            >, adipisicing elit. Quas laboriosam rem officia quisquam vero,
+            reprehenderit consequuntur suscipit repellat tempora itaque <span
+              class="text-pink-400">voluptatum cupiditate</span
+            > possimus laudantium in quidem unde neque nam a.
           </p>
           <p class="text-white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
             laboriosam rem officia quisquam vero, reprehenderit consequuntur
             suscipit repellat tempora itaque voluptatum cupiditate possimus
-            laudantium  <span class="text-pink-400">in quidem unde neque nam a</span>.
+            laudantium <span class="text-pink-400"
+              >in quidem unde neque nam a</span
+            >.
           </p>
         </footer>
       </div>
     </section>
 
     <section
+    class="w-full h-full max-h-screen flex justify-center items-center px-56 py-8"
+  >
+    <div class="w-full h-full flex max-w-[1440px] gap-10">
+        <picture class="w-full grid place-content-center">
+          <img class="w-96 xl:w-[480px] 2xl:w-[600px]" src="../../public/salon.svg" alt="">
+        </picture>
+    </div>
+  </section>
+
+    <section
       class="w-full h-full max-h-screen flex justify-center items-center px-56 py-24"
     >
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <div
-          class="w-full flex items-center justify-between text-white text-2xl 2xl:text-3xl"
+          class="w-full flex items-center justify-between flex-wrap text-white text-2xl 2xl:text-3xl"
         >
-          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl 2xl:text-4xl">+10</span> Años</p>
-          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl 2xl:text-4xl">+1000</span> Clientes</p>
-          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl 2xl:text-4xl">+10</span> Años</p>
-          <p class="flex gap-2 items-center"><span class="text-pink-400 text-3xl 2xl:text-4xl">+1000</span> Clientes</p>
+          <p class="flex gap-2 items-center opacity-95">
+            <span class="text-pink-400 font-medium text-3xl 2xl:text-4xl"
+              >+10</span
+            > Años
+          </p>
+          <p class="flex gap-2 items-center opacity-95">
+            <span class="text-pink-400 font-medium text-3xl 2xl:text-4xl"
+              >+1000</span
+            > Clientes
+          </p>
+          <p class="flex gap-2 items-center opacity-95">
+            <span class="text-pink-400 font-medium text-3xl 2xl:text-4xl"
+              >+10</span
+            > Años
+          </p>
+          <p class="flex gap-2 items-center opacity-95">
+            <span class="text-pink-400 font-medium text-3xl 2xl:text-4xl"
+              >+1000</span
+            > Clientes
+          </p>
         </div>
       </div>
     </section>
@@ -114,32 +146,32 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         </header>
         <div class="w-full h-full grid grid-cols-auto-fit gap-3">
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery.jpg"
             alt=""
           />
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery-2.jpg"
             alt=""
           />
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery-3.jpg"
             alt=""
           />
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery-4.jpg"
             alt=""
           />
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery-5.jpg"
             alt=""
           />
           <img
-            class="object-cover h-60 w-full rounded-lg"
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
             src="../../public/galery-6.jpg"
             alt=""
           />
@@ -155,27 +187,37 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Contacto</h2>
         </header>
-        <footer class="w-full h-full flex flex-wrap text-lg 2xl:text-xl gap-5 text-white">
+        <footer
+          class="w-full h-full flex flex-wrap text-lg 2xl:text-xl gap-5 text-white"
+        >
           <a
             class="flex text-center justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.google.com/maps/place/Forbici+Stilisti/@-34.5749891,-58.4827971,15z/data=!4m2!3m1!1s0x0:0xe224e909fd5f437a?sa=X&ved=2ahUKEwiphKHPjquEAxUiqJUCHUuzD1gQ_BJ6BAgwEAA"
             target="_blank"
-            ><IconLocation class="w-6 2xl:min-w-8" />Ubicación: 2194, FIH, Pacheco, C1431 DF</a
+            title="Dirección de nuestro local"
+            ><IconLocation class="w-6 2xl:min-w-8" />Ubicación: 2194, FIH,
+            Pacheco, C1431 DF</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href=""
-            target="_blank"><IconPhone class="w-6 2xl:min-w-8" />Telefono: 4523-6782</a
+            target="_blank"
+            title="Escribinos para cualquier consulta"
+            ><IconPhone class="w-6 2xl:min-w-8" />Telefono: 4523-6782</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.instagram.com/forbicistilisti/?hl=es"
-            target="_blank"><IconInstagram class="w-6 2xl:min-w-8" />Instagram</a
+            target="_blank"
+            title="Seguinos en Instagram"
+            ><IconInstagram class="w-6 2xl:min-w-8" />Instagram</a
           >
           <a
             class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2"
             href="https://www.facebook.com/forbicistilisti/?locale=es_LA"
-            target="_blank"><IconFacebook class="w-6 2xl:min-w-8" />Facebook</a
+            target="_blank"
+            title="Seguinos en Facebook"
+            ><IconFacebook class="w-6 2xl:min-w-8" />Facebook</a
           >
         </footer>
       </div>
