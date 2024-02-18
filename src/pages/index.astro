@@ -1,4 +1,12 @@
 ---
+import { Image } from "astro:assets";
+import SalonImg from "/public/salon.svg";
+import GaleryOne from "../img/galery.jpg"
+import GaleryTwo from "../img/galery-2.jpg"
+import GaleryThree from "../img/galery-3.jpg"
+import GaleryFour from "../img/galery-4.jpg"
+import GaleryFive from "../img/galery-5.jpg"
+import GalerySix from "../img/galery-6.jpg"
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import IconStraigthen from "../components/icons/IconStraighten.astro";
@@ -95,23 +103,19 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       </div>
     </section>
 
-    <section
-      class="w-full h-full flex justify-center items-center px-56 py-8"
-    >
+    <section class="w-full h-full flex justify-center items-center px-56 py-8">
       <div class="w-full h-full flex max-w-[1440px] gap-10">
         <picture class="w-full grid place-content-center">
-          <img
+          <Image
             class="w-96 xl:w-[480px] 2xl:w-[600px]"
-            src="/public/salon.svg"
-            alt=""
+            src={SalonImg}
+            alt="Salon"
           />
         </picture>
       </div>
     </section>
 
-    <section
-      class="w-full h-full flex justify-center items-center px-56 py-24"
-    >
+    <section class="w-full h-full flex justify-center items-center px-56 py-24">
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <div
           class="w-full flex items-center justify-between flex-wrap text-white text-2xl 2xl:text-3xl bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 px-6 py-12"
@@ -149,36 +153,24 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           <h2 class="text-pink-200 font-bold text-5xl">Galeria</h2>
         </header>
         <div class="w-full h-full grid grid-cols-auto-fit gap-3">
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery.jpg"
-            alt=""
-          />
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery-2.jpg"
-            alt=""
-          />
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery-3.jpg"
-            alt=""
-          />
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery-4.jpg"
-            alt=""
-          />
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery-5.jpg"
-            alt=""
-          />
-          <img
-            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-            src="/public/galery-6.jpg"
-            alt=""
-          />
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GaleryOne}
+          alt="a"/>
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GaleryTwo}
+          alt="a"/>
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GaleryThree}
+          alt="a"/>
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GaleryFour}
+          alt="a"/>
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GaleryFive}
+          alt="a"/>
+          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+          src={GalerySix}
+          alt="a"/>
         </div>
       </div>
     </section>
