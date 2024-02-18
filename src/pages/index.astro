@@ -25,20 +25,20 @@ import ButtonHeader from "../components/ButtonHeader.astro";
   <Header />
   <main id="home">
     <section
-      class="w-full max-h-screen h-[900px] flex justify-center items-center px-56"
+      class="w-full max-h-screen h-[900px] flex justify-center items-center px-56 max-xl:px-12 max-md:px-6"
     >
       <div
         class="w-full flex flex-col gap-10 items-center justify-center max-w-[1440px]"
       >
         <header class="w-full flex flex-col items-center justify-center gap-6">
-          <h1 class="text-pink-300 font-bold text-8xl text-center 2xl:text-9xl">
+          <h1 class="text-pink-300 font-bold text-8xl text-center 2xl:text-9xl max-md:text-[78px]">
             Forbici Stilisti
           </h1>
-          <p class="text-3xl text-white opacity-80 2xl:text-4xl">
+          <p class="text-3xl text-white opacity-80 2xl:text-4xl max-md:text-center max-md:text-[28px]">
             Especialistas en Corte/Colorimetria
           </p>
         </header>
-        <footer class="w-full flex justify-center items-center gap-6">
+        <footer class="w-full flex flex-wrap justify-center items-center gap-6">
           <ButtonHeader
             class="bg-opacity-90 bg-pink-400 hover:bg-opacity-100"
           />
@@ -51,7 +51,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
 
     <section
       id="service"
-      class="w-full h-full flex justify-center items-center px-56 py-24"
+      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
     >
       <div class="w-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
@@ -76,13 +76,13 @@ import ButtonHeader from "../components/ButtonHeader.astro";
 
     <section
       id="history"
-      class="w-full h-full flex justify-center items-center px-56 py-24"
+      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
     >
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Historia</h2>
         </header>
-        <footer class="flex gap-8 text-lg 2xl:text-xl">
+        <footer class="flex gap-8 text-lg 2xl:text-xl max-2xl:flex-wrap">
           <p class="text-white">
             Lorem ipsum dolor <span class="text-pink-400"
               >sit amet consectetur</span
@@ -103,7 +103,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       </div>
     </section>
 
-    <section class="w-full h-full flex justify-center items-center px-56 py-8">
+    <section class="w-full h-full flex justify-center items-center px-56 py-8 max-xl:px-12 max-md:px-6">
       <div class="w-full h-full flex max-w-[1440px] gap-10">
         <picture class="w-full grid place-content-center">
           <Image
@@ -115,27 +115,27 @@ import ButtonHeader from "../components/ButtonHeader.astro";
       </div>
     </section>
 
-    <section class="w-full h-full flex justify-center items-center px-56 py-24">
+    <section class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6">
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <div
-          class="w-full flex items-center justify-between flex-wrap text-white text-2xl 2xl:text-3xl bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 px-6 py-12"
+          class="w-full h-full grid grid-cols-auto-fit gap-y-4 text-white text-2xl bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 px-6 py-12 2xl:text-3xl max-xl:px-3 max-xl:py-8"
         >
-          <p class="flex gap-2 items-center opacity-95">
+          <p class="flex justify-center gap-2 items-center opacity-95">
             <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
               >+10</span
             > Años
           </p>
-          <p class="flex gap-2 items-center opacity-95">
+          <p class="flex justify-center gap-2 items-center opacity-95">
             <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
               >+1000</span
             > Clientes
           </p>
-          <p class="flex gap-2 items-center opacity-95">
+          <p class="flex justify-center gap-2 items-center opacity-95">
             <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
               >+10</span
             > Años
           </p>
-          <p class="flex gap-2 items-center opacity-95">
+          <p class="flex justify-center gap-2 items-center opacity-95">
             <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
               >+1000</span
             > Clientes
@@ -146,7 +146,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
 
     <section
       id="galery"
-      class="w-full h-full flex justify-center items-center px-56 py-24"
+      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
     >
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
@@ -177,7 +177,7 @@ import ButtonHeader from "../components/ButtonHeader.astro";
 
     <section
       id="contact"
-      class="w-full h-full flex justify-center items-center px-56 py-24"
+      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
     >
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
