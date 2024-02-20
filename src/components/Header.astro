@@ -6,15 +6,19 @@
 // }
 
 // const { href, title, body } = Astro.props;
+import IconMenu from "../components/icons/IconMenu.astro"
 ---
 
-<header class="w-full flex justify-center fixed py-4 px-64 z-10 max-xl:px-24 max-md:hidden">
-	<nav class="w-full max-w-[1440px] flex justify-between text-white opacity-95 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2 2xl:text-xl 2xl:py-3">
+<header class="w-full flex justify-center fixed py-4 px-64 z-10 max-xl:px-24 max-md:justify-end max-md:px-6 max-md:py-6 max-md:static">
+	<nav class="w-full max-w-[1440px] flex justify-between text-white opacity-95 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-6 py-2 2xl:text-xl 2xl:py-3 max-md:hidden">
 		<a class="hover:text-pink-300 transition-colors" href="#home" title="Ir al Inicio">Inicio</a>
 		<a class="hover:text-pink-300 transition-colors" href="#service" title="Ver los Servicios">Servicios</a>
 		<a class="hover:text-pink-300 transition-colors" href="#history" title="Ver Historia">Historia</a>
 		<a class="hover:text-pink-300 transition-colors" href="#galery" title="Ver Galeria">Galeria</a>
 		<a class="hover:text-pink-300 transition-colors" href="#contact" title="Ver Contacto">Contacto</a>
+	</nav>
+	<nav class="item-center justify-end w-full hidden max-md:flex">
+		<IconMenu class="w-12 opacity-90" />
 	</nav>
 </header>
 <slot/>
