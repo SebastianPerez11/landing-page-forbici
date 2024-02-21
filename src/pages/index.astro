@@ -1,12 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import SalonImg from "/public/salon.svg";
-import GaleryOne from "../img/galery.jpg"
-import GaleryTwo from "../img/galery-2.jpg"
-import GaleryThree from "../img/galery-3.jpg"
-import GaleryFour from "../img/galery-4.jpg"
-import GaleryFive from "../img/galery-5.jpg"
-import GalerySix from "../img/galery-6.jpg"
+import GaleryOne from "../img/galery.jpg";
+import GaleryTwo from "../img/galery-2.jpg";
+import GaleryThree from "../img/galery-3.jpg";
+import GaleryFour from "../img/galery-4.jpg";
+import GaleryFive from "../img/galery-5.jpg";
+import GalerySix from "../img/galery-6.jpg";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import IconStraigthen from "../components/icons/IconStraighten.astro";
@@ -19,41 +19,45 @@ import IconLocation from "../components/icons/IconLocation.astro";
 import IconPhone from "../components/icons/IconPhone.astro";
 import ServiceIcon from "../components/ServiceIcon.astro";
 import ButtonHeader from "../components/ButtonHeader.astro";
+import Section from "../components/Section.astro";
+import DataSection from "../components/DataSection.astro";
+import LinkContact from "../components/LinkContact.astro";
 ---
 
 <Layout title="Landing Page">
   <Header />
   <main id="home">
-    <section
-      class="w-full max-h-svh h-[900px] flex justify-center items-center px-56 max-xl:px-12 max-md:px-6 max-md:h-[500PX]"
+    <Section
+      class="w-full max-h-svh h-[950px] flex justify-center items-center px-56 max-xl:px-12 max-md:px-6 max-md:h-[500px]"
     >
       <div
         class="w-full flex flex-col gap-10 items-center justify-center max-w-[1440px]"
       >
         <header class="w-full flex flex-col items-center justify-center gap-6">
-          <h1 class="text-pink-300 font-bold text-8xl text-center 2xl:text-9xl max-md:text-[78px]">
+          <h1
+            class="text-pink-300 font-bold text-8xl text-center 2xl:text-9xl max-md:text-[78px]"
+          >
             Forbici Stilisti
           </h1>
-          <p class="text-3xl text-white opacity-80 2xl:text-4xl max-md:text-center max-md:text-[28px]">
+          <p
+            class="text-3xl text-white opacity-80 2xl:text-4xl max-md:text-center max-md:text-[28px]"
+          >
             Especialistas en Corte/Colorimetria
           </p>
         </header>
         <footer class="w-full flex flex-wrap justify-center items-center gap-6">
           <ButtonHeader
-            class="bg-opacity-90 bg-pink-400 hover:bg-opacity-100"
+            class="bg-pink-400 hover:bg-opacity-90"
           />
           <ButtonHeader
-            class="bg-transparent hover:bg-white hover:border-white hover:bg-opacity-85 hover:text-pink-400"
+            class="bg-transparent hover:bg-white hover:border-white hover:bg-opacity-90 hover:text-pink-400"
           />
         </footer>
       </div>
-    </section>
+    </Section>
 
-    <section
-      id="service"
-      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
-    >
-      <div class="w-full flex flex-col max-w-[1440px] gap-10">
+    <Section id="service">
+      <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Servicios</h2>
         </header>
@@ -72,12 +76,9 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           </ServiceIcon>
         </div>
       </div>
-    </section>
+    </Section>
 
-    <section
-      id="history"
-      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
-    >
+    <Section id="history">
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Historia</h2>
@@ -101,9 +102,9 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           </p>
         </footer>
       </div>
-    </section>
+    </Section>
 
-    <section class="w-full h-full flex justify-center items-center px-56 py-8 max-xl:px-12 max-md:px-6">
+    <Section>
       <div class="w-full h-full flex max-w-[1440px] gap-10">
         <picture class="w-full grid place-content-center">
           <Image
@@ -113,72 +114,62 @@ import ButtonHeader from "../components/ButtonHeader.astro";
           />
         </picture>
       </div>
-    </section>
+    </Section>
 
-    <section class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6">
+    <Section>
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <div
           class="w-full h-full grid grid-cols-auto-fit gap-y-4 text-white text-2xl bg-gray-400 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 px-6 py-12 2xl:text-3xl max-xl:px-3 max-xl:py-8"
         >
-          <p class="flex justify-center gap-2 items-center opacity-95">
-            <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
-              >+10</span
-            > Años
-          </p>
-          <p class="flex justify-center gap-2 items-center opacity-95">
-            <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
-              >+1000</span
-            > Clientes
-          </p>
-          <p class="flex justify-center gap-2 items-center opacity-95">
-            <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
-              >+10</span
-            > Años
-          </p>
-          <p class="flex justify-center gap-2 items-center opacity-95">
-            <span class="text-pink-300 font-medium text-3xl 2xl:text-4xl"
-              >+1000</span
-            > Clientes
-          </p>
+          <DataSection number="+10" text="Años" />
+          <DataSection number="+500" text="Clientes" />
+          <DataSection number="+12" text="Años" />
+          <DataSection number="+40" text="Clientes" />
         </div>
       </div>
-    </section>
+    </Section>
 
-    <section
-      id="galery"
-      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
-    >
+    <Section id="galery">
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Galeria</h2>
         </header>
         <div class="w-full h-full grid grid-cols-auto-fit gap-3">
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GaleryOne}
-          alt="a"/>
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GaleryTwo}
-          alt="a"/>
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GaleryThree}
-          alt="a"/>
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GaleryFour}
-          alt="a"/>
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GaleryFive}
-          alt="a"/>
-          <Image class="object-cover h-60 w-full rounded-lg 2xl:h-96"
-          src={GalerySix}
-          alt="a"/>
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GaleryOne}
+            alt="Corte de Pelo"
+          />
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GaleryTwo}
+            alt="Corte de Pelo"
+          />
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GaleryThree}
+            alt="Corte de Pelo"
+          />
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GaleryFour}
+            alt="Corte de Pelo"
+          />
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GaleryFive}
+            alt="Corte de Pelo"
+          />
+          <Image
+            class="object-cover h-60 w-full rounded-lg 2xl:h-96"
+            src={GalerySix}
+            alt="Corte de Pelo"
+          />
         </div>
       </div>
-    </section>
+    </Section>
 
-    <section
-      id="contact"
-      class="w-full h-full flex justify-center items-center px-56 py-24 max-xl:px-12 max-md:px-6"
-    >
+    <Section id="contact">
       <div class="w-full h-full flex flex-col max-w-[1440px] gap-10">
         <header class="w-full flex justify-star">
           <h2 class="text-pink-200 font-bold text-5xl">Contacto</h2>
@@ -186,37 +177,37 @@ import ButtonHeader from "../components/ButtonHeader.astro";
         <footer
           class="w-full h-full flex flex-wrap text-lg 2xl:text-xl gap-5 text-white"
         >
-          <a
-            class="flex text-center justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2 2xl:py-3 2xl:px-5"
+          <LinkContact
             href="https://www.google.com/maps/place/Forbici+Stilisti/@-34.5749891,-58.4827971,15z/data=!4m2!3m1!1s0x0:0xe224e909fd5f437a?sa=X&ved=2ahUKEwiphKHPjquEAxUiqJUCHUuzD1gQ_BJ6BAgwEAA"
-            target="_blank"
             title="Dirección de nuestro local"
-            ><IconLocation class="w-6 2xl:min-w-8" />Ubicación: 2194, FIH,
-            Pacheco, C1431 DF</a
+            content=`Ubicación: 2194, FIH,
+          Pacheco, C1431 DF`
           >
-          <a
-            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2 2xl:py-3 2xl:px-5"
-            href=""
-            target="_blank"
+            <IconLocation slot="icon" class="w-6 2xl:min-w-8" />
+          </LinkContact>
+          <LinkContact
+            href="tel:45236782"
             title="Escribinos para cualquier consulta"
-            ><IconPhone class="w-6 2xl:min-w-8" />Telefono: 4523-6782</a
+            content="Telefono: 4523-6782"
           >
-          <a
-            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2 2xl:py-3 2xl:px-5"
+            <IconPhone slot="icon" class="w-6 2xl:min-w-8" />
+          </LinkContact>
+          <LinkContact
             href="https://www.instagram.com/forbicistilisti/?hl=es"
-            target="_blank"
             title="Seguinos en Instagram"
-            ><IconInstagram class="w-6 2xl:min-w-8" />Instagram</a
+            content="Instagram"
           >
-          <a
-            class="flex justify-center items-center gap-3 bg-gray-400 rounded-full bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 px-3 py-2 2xl:py-3 2xl:px-5"
+            <IconInstagram slot="icon" class="w-6 2xl:min-w-8" />
+          </LinkContact>
+          <LinkContact
             href="https://www.facebook.com/forbicistilisti/?locale=es_LA"
-            target="_blank"
             title="Seguinos en Facebook"
-            ><IconFacebook class="w-6 2xl:min-w-8" />Facebook</a
+            content="Facebook"
           >
+            <IconFacebook slot="icon" class="w-6 2xl:min-w-8" />
+          </LinkContact>
         </footer>
       </div>
-    </section>
+    </Section>
   </main>
 </Layout>
