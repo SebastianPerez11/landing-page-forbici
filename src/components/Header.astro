@@ -7,9 +7,9 @@
 
 // const { href, title, body } = Astro.props;
 
-
 import IconMenu from "../components/icons/IconMenu.astro";
 import LinkNav from "../components/LinkNav.astro";
+import LinkNavMob from "../components/LinkNavMob.astro";
 ---
 
 <header
@@ -33,19 +33,19 @@ import LinkNav from "../components/LinkNav.astro";
     id="menu-nesting"
     class="grid place-content-center gap-10 text-center text-2xl w-full h-screen absolute top-0 bottom-0 transition-all right-[-100%] z-40 bg-[#0F0F14] md:hidden"
   >
-    <LinkNav
+    <LinkNavMob
       class="text-white"
       href="#home"
       title="Ir al Inicio"
       content="Inicio"
     />
-    <LinkNav
+    <LinkNavMob
       class="text-pink-300"
       href="#service"
       title="Ver Servicios"
       content="Servicios"
     />
-    <LinkNav
+    <LinkNavMob
       class="text-white"
       href="#history"
       title="Ver Historia"
@@ -57,7 +57,7 @@ import LinkNav from "../components/LinkNav.astro";
       title="Ver Galeria"
       content="Galeria"
     />
-    <LinkNav
+    <LinkNavMob
       class="text-white"
       href="#contact"
       title="Ver Contacto"
@@ -77,13 +77,12 @@ import LinkNav from "../components/LinkNav.astro";
   function openMenu() {
     menu.classList.toggle("right-[0]");
     body.classList.toggle("overflow-hidden");
-  };
+  }
 
-  document.querySelectorAll(".linksMenu").forEach(function(link) {
-  link.addEventListener('click', function() {
-    menu.classList.toggle("right-[0]");
-    body.classList.toggle("overflow-hidden");
+  document.querySelectorAll(".linksMenu").forEach(function (link) {
+    link.addEventListener("click", function () {
+      menu.classList.toggle("right-[0]");
+      body.classList.toggle("overflow-hidden");
+    });
   });
-});
-
 </script>
