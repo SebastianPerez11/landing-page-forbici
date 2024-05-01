@@ -46,11 +46,12 @@ import LinkContact from "../components/LinkContact.astro";
           </p>
         </header>
         <footer class="w-full flex flex-wrap justify-center items-center gap-6">
-          <ButtonHeader
+          <ButtonHeader content="Ver Más"
             class="bg-pink-400 hover:bg-opacity-80"
           />
           <ButtonHeader
-            class="bg-transparent hover:bg-white hover:border-white hover:bg-opacity-80 hover:text-pink-400"
+          content="Contactanos"
+            class="bg-transparent hover:bg-white hover:border-white hover:bg-opacity-90 hover:text-pink-400"
           />
         </footer>
       </div>
@@ -62,6 +63,18 @@ import LinkContact from "../components/LinkContact.astro";
           <h2 class="text-pink-200 font-bold text-5xl">Servicios</h2>
         </header>
         <div class="w-full grid grid-cols-auto-fit gap-4">
+          <ServiceIcon title="Corte">
+            <IconScissor class="w-16 2xl:w-20" />
+          </ServiceIcon>
+          <ServiceIcon title="Alisado">
+            <IconStraigthen class="w-16 2xl:w-20" />
+          </ServiceIcon>
+          <ServiceIcon title="Tintura">
+            <IconTinte class="w-16 2xl:w-20" />
+          </ServiceIcon>
+          <ServiceIcon title="Rasurado">
+            <IconRazer class="w-16 2xl:w-20" />
+          </ServiceIcon>
           <ServiceIcon title="Corte">
             <IconScissor class="w-16 2xl:w-20" />
           </ServiceIcon>
